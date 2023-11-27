@@ -4,6 +4,7 @@ const baseURL = "http://localhost:9999/api";
 
 const axiosClient = axios.create({
   baseURL,
+  withCredentials: true,
 });
 
 const origamiAPI = {

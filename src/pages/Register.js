@@ -24,10 +24,7 @@ const Register = () => {
         username: formData.username,
         password: formData.password,
       });
-
-      // Handle the response (you can customize this based on your API)
-      console.log("API Response:", response);
-      setMessage("Success"); // Set a success message
+      setMessage("");
     } catch (error) {
       // Handle errors
       console.error("Error sending data to the API:", error);
@@ -85,7 +82,7 @@ const Register = () => {
             required
           />
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-primary btn-block">
           Register
         </button>
       </form>
